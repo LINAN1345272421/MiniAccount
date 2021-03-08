@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="查询">
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="关键字"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+    </TextView>
+
+    <EditText android:id="@+id/txtQueryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <TextView
+        android:text="从（年—月—日）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+    </TextView>
+
+    <EditText android:id="@+id/txtQueryFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到（年—月—日）"
+        android:layout_marginTop="25dp">
+    </TextView>
+
+    <EditText android:id="@+id/txtQueryTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date">
+    </EditText>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <RadioButton android:id="@+id/rdoQueryAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:checked="true">
+        </RadioButton>
+
+        <RadioButton android:id="@+id/rdoQueryExpenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出">
+        </RadioButton>
+
+        <RadioButton android:id="@+id/rdoQueryIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入">
+        </RadioButton>
+
+    </RadioGroup>
+
+</LinearLayout>

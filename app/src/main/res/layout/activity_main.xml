@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:id="@+id/mainToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+    <Button android:id="@+id/btnToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:background="#000000">
+    </Button>
+
+    <Button android:id="@+id/btnThisMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当月"
+        android:layout_weight="1"
+        android:textAllCaps="false">
+    </Button>
+
+    <Button android:id="@+id/btnThisYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当年"
+        android:layout_weight="1"
+        android:textAllCaps="false">
+    </Button>
+
+    <Button android:id="@+id/btnQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:layout_weight="1"
+        android:textAllCaps="false">
+    </Button>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/mainToolBarBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal">
+
+    <Button android:id="@+id/btnReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="统计"
+        android:textAllCaps="false"
+        android:layout_weight="1">
+    </Button>
+
+    <Button android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:layout_weight="1"
+        android:textAllCaps="false">
+    </Button>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lstAcct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainToolBar"
+        android:layout_above="@id/mainToolBarBottom">
+    </ListView>
+
+</RelativeLayout>
